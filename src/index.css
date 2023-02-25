@@ -1,0 +1,124 @@
+/* ================= GOOGLE FONTS =============== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    @apply text-dark_primary;
+  }
+
+  h1 {
+    @apply font-Montserrat lg:text-6xl text-3xl font-extrabold;
+  }
+
+  h2 {
+    @apply font-Montserrat text-5xl font-bold;
+  }
+
+  h3 {
+    @apply font-Montserrat text-5xl;
+  }
+
+  h4 {
+    @apply md:text-4xl text-3xl !leading-relaxed font-Montserrat;
+  }
+
+  h6 {
+    @apply font-Montserrat font-bold text-[#253D57] leading-8;
+  }
+
+  p {
+    @apply font-Montserrat text-[0.95rem];
+  }
+
+  button {
+    @apply font-Montserrat;
+  }
+
+  input,
+  textarea {
+    @apply bg-transparent outline-none font-Montserrat;
+  }
+}
+
+@layer utilities {
+  .btn {
+    @apply py-2 px-9 border-2 rounded-md border-blue-700 font-medium;
+  }
+
+  .title {
+    @apply md:text-3xl text-2xl;
+  }
+
+  .subtitle {
+    @apply text-blue-500;
+  }
+}
+
+.emoji {
+  font-size: 3rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home-img {
+  background: url('https://scontent.ftru2-2.fna.fbcdn.net/v/t1.6435-9/94127690_869223960167372_2243893294289387520_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEOZOO0sMXzpqkTzM93Yag1JdeYanaFXOAl15hqdoVc4KC58zLuyg_Fx9Wrq7g-jDWtCfBJ7mlWoIB1hCyZ2dcM&_nc_ohc=jTIKZPRWynwAX_2lv12&tn=COAW9yvKzebTyG-I&_nc_ht=scontent.ftru2-2.fna&oh=00_AfAupm-IzSGLND6XcqGmK8_vW_MrblkeElpl-Hb3aK04vw&oe=640A9207');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+  order: 1;
+  justify-self: center;
+  width: 350px;
+  height: 350px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
