@@ -5,6 +5,8 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
+import tictactoe from "./assets/images/Projects/tictactoe.png";
+
 import Hireme_person from "./assets/images/Hireme/hire.svg";
 
 // import icons from react-icons
@@ -142,12 +144,12 @@ export const content = {
     content: [
       {
         id: 1,
-        title: "Mi página web personal",
-        description: "Una página web donde muestro mi información personal y mis habilidades.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubLink: "https://github.com/mi-usuario/mi-pagina-web-personal",
-        previewLink: "https://mi-usuario.github.io/mi-pagina-web-personal/",
-        image: "https://i.ibb.co/DwcwgDP/pexels-chevanon-photography-1108099-1.png",
+        title: "Tic Tac Toe",
+        description: "Juego clásico de dos jugadores que se juega en un tablero de 3x3.",
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
+        githubLink: "https://github.com/WaynerEP/tic-tac-toe",
+        previewLink: "https://waynerep.github.io/tic-tac-toe/",
+        image: tictactoe,
         isPreview: true,
         screenshots: []
       },

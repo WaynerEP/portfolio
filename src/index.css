@@ -45,7 +45,7 @@
     @apply font-Montserrat text-[0.95rem];
   }
 
-  button {
+  a, button {
     @apply font-Montserrat;
   }
 

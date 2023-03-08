@@ -9,7 +9,7 @@ const Home = () => {
 
   const downloadFile = () => {
     setIsDownloading(true);
-    fetch('/my_cv.pdf')
+    fetch('/portfolio/my_cv.pdf')
       .then(response => {
         // Verifica que la respuesta sea correcta
         if (!response.ok) {

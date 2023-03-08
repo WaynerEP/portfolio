@@ -5,7 +5,7 @@ const Skills = () => {
   const { skills } = content;
 
   return (
-    <section className="min-h-fit dark:bg-dark_primary px-20" id="skills">
+    <section className="min-h-fit dark:bg-dark_primary px-4 md:px-20" id="skills">
       <div className="md:container px-5 py-14 border-t-2 border-slate-200 dark:border-border_color">
         <h2 className="title dark:text-white" data-aos="fade-down">
           {skills.title}

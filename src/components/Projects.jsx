@@ -21,7 +21,7 @@ const Projects = () => {
     };
   }
   return (
-    <section className="bg-bg_light_primary dark:bg-dark_primary px-20" id="projects">
+    <section className="bg-bg_light_primary dark:bg-dark_primary px-4 md:px-20" id="projects">
       <div className="md:container px-5 py-14 space-y-10 border-t-2 border-slate-200 dark:border-border_color">
         <div>
           <h2 className="title dark:text-white" data-aos="fade-down">
